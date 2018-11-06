@@ -1,11 +1,8 @@
 /* jshint esversion:6, node:true */
 
-const name = 'fred';
+const app = require('./app');
 
-console.log(name);
-
-const fred = 'name';
-
-const name2 = 'fred2';
-
-console.log(name2, 'cheese', fred);
+app.listen(
+  80,
+  () => console.log('Now listening on port 80'),
+);
